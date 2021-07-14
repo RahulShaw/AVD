@@ -1,7 +1,7 @@
  # set regKey
  write-host 'AIB Customization: Set required regKey'
- REG ADD HKLM\SOFTWARE\Microsoft\Teams
- REG ADD HKLM\SOFTWARE\Microsoft\Teams /v IsWVDEnvironment /t REG_DWORD /d 1
+ REG ADD HKLM\SOFTWARE\Microsoft\Teams /f
+ REG ADD HKLM\SOFTWARE\Microsoft\Teams /v IsWVDEnvironment /t REG_DWORD /d 1 /f
  write-host 'AIB Customization: Finished Set required regKey'
  
  
